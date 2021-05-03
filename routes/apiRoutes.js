@@ -46,7 +46,7 @@ module.exports = function(app) {
         db.Workout.aggregate([
             {
                 $addFields: {
-                    total:Duration: {
+                    totalDuration: {
                         $sum: "$exercises.duration"
                     }
                 }
